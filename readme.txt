@@ -3,6 +3,7 @@
 # Scott Sullivan scott@sullysbrain.com
 
 
+
 ## Folder Structure
 
 venv: Python virtual environment
