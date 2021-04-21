@@ -11,3 +11,5 @@ ml-iris-src: Main Source Code for machine learning project
 venv activation:
 source venv/bin/activate
 
+venv deactivate:
+deactivate
