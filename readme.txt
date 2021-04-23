@@ -14,3 +14,9 @@ source venv/bin/activate
 
 venv deactivate:
 deactivate
+
+
+VS Code Workspace settings to activate VENV automatically:
+{
+	"python.pythonPath": "${workspaceFolder}/venv"
+}

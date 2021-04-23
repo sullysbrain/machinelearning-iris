@@ -19,7 +19,6 @@ while not playerWon:
     playerInt = int(player)
     computerInt = random.randint(1, 3)
     print("You chose: " + returnPlayString(playerInt) + ". Computer chose " + returnPlayString(computerInt) + ". ")
-
     if playerInt == computerInt:
         print("Tie. You both played " + returnPlayString(playerInt) + "\n")
     elif ((playerInt == 1) & (computerInt == 3)) | ((playerInt == 2) & (computerInt == 1)) | ((playerInt == 3) & (computerInt == 2)):
