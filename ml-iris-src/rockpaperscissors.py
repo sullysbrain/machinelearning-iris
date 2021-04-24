@@ -14,7 +14,7 @@ def returnPlayString(value: int) -> str:
             return "Rock"
         elif value == 2:
             return "Paper"
-        else:
+        elif value == 3:
             return "Scissors"
     else:
         return ""
@@ -24,7 +24,9 @@ def getValidSelections():
     playerSelectionNotValid = True
     while playerSelectionNotValid:
         playerSelection = input("Select: 1) Rock 2) Paper 3) Scissors: ")
-        if ((int(playerSelection) > 0) & (int(playerSelection) < 4)):
+        if playerSelection == '':
+            print("Please make a valid selection.\n")
+        elif ((int(playerSelection) > 0) & (int(playerSelection) < 4)):
             playerSelectionNotValid = False
         else:
             print("Please make a valid selection.\n")
