@@ -7,7 +7,7 @@ The game repeats if the player ties or loses and continues until the player wins
 
 import random
 
-def returnPlayString(value: int) -> int:
+def returnPlayString(value: int) -> str:
     """A function to take a numerical value inputed from the user and returns a string of what the user played"""
     if 0 < value & value < 4:
         if value == 1:
