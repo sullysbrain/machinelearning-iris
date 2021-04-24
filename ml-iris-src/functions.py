@@ -13,10 +13,19 @@ def returnPlayString(value):
     else:
         return ""
 
+def getValidSelections():
+    playerSelectionNotValid = True
+    while playerSelectionNotValid:
+        playerSelection = input("Select: 1) Rock 2) Paper 3) Scissors: ")
+        if ((int(playerSelection) > 0) & (int(playerSelection) < 4)):
+            playerSelectionNotValid = False
+        else:
+            print("Please make a valid selection.\n")
+    return int(playerSelection)
+
 
 while not playerWon:
-    player = input("Select: 1) Rock 2) Paper 3) Scissors: ")
-    playerInt = int(player)
+    playerInt = getValidSelections();
     computerInt = random.randint(1, 3)
     print("You chose: " + returnPlayString(playerInt) + ". Computer chose " + returnPlayString(computerInt) + ". ")
     if playerInt == computerInt:
